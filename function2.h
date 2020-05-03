@@ -6,21 +6,21 @@ using namespace std;
 class bangun_ruang_sisi_lancip
 {
  protected:
-       double x,y,z;
-       float phi;
+   double x,y,z;
+   float phi;
        
-  public:
-       virtual void get_data()=0;
-       virtual void display_area()=0;
+ public:
+   virtual void get_data()=0;
+   virtual void display_area()=0;
 };
 class kerucut: public bangun_ruang_sisi_lancip
 {
    public:
     void get_data(void)
     {
-	   cout<<"Menghitung volume kerucut : \n\n";
-       cout<<"masukkan nilai jari jari = "; cin>>x;
-       cout<<"masukkan nilai tinggi = "; cin>>y;
+      cout<<"Menghitung volume kerucut : \n\n";
+      cout<<"masukkan nilai jari jari = "; cin>>x;
+      cout<<"masukkan nilai tinggi = "; cin>>y;
     }
     void display_area(void)
     {
