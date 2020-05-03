@@ -6,19 +6,19 @@ using namespace std;
 class bangun_ruang_sisi_lengkung
 {
  protected:
-       double x,y,z;
-       float phi;
+   double x,y,z;
+   float phi;
        
-  public:
-       virtual void get_data()=0;
-       virtual void display_area()=0;
+ public:
+    virtual void get_data()=0;
+    virtual void display_area()=0;
 };
 class tabung: public bangun_ruang_sisi_lengkung
 {
    public:
     void get_data(void)
     {
-	   cout<<"Menghitung volume tabung : \n\n";
+       cout<<"Menghitung volume tabung : \n\n";
        cout<<"masukkan nilai jari-jari = "; cin>>x;
        cout<<"masukkan nilai tinggi = "; cin>>y;
     }
